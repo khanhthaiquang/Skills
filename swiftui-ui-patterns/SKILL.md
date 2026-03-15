@@ -47,7 +47,7 @@ Use the narrowest state tool that matches the ownership model:
 | Local UI state owned by one view | `@State` |
 | Child mutates parent-owned value state | `@Binding` |
 | Root-owned reference model on iOS 17+ | `@State` with an `@Observable` type |
-| Child reads or mutates an injected model | Pass it explicitly as a stored property |
+| Child reads or mutates an injected `@Observable` model on iOS 17+ | Pass it explicitly as a stored property |
 | Shared app service or configuration | `@Environment(Type.self)` |
 | Legacy reference model on iOS 16 and earlier | `@StateObject` at the root, `@ObservedObject` when injected |
 
