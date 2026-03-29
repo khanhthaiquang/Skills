@@ -1,9 +1,9 @@
 ---
-name: simplify-code
+name: review-and-simplify-changes
 description: "Review a git diff or explicit file scope for reuse, code quality, efficiency, clarity, and standards issues, then optionally apply safe Codex-driven fixes. Use when the user asks to \"simplify code\", \"review changed code\", \"check for code reuse\", \"review code quality\", \"review efficiency\", \"simplify changes\", \"clean up code\", \"refactor changes\", or \"run simplify\"."
 ---
 
-# Simplify Code
+# Review and Simplify Changes
 
 Review changed code for reuse, quality, efficiency, and clarity issues. Use Codex sub-agents to review in parallel, but keep those sub-agents read-only: they should only inspect code and send findings back to the main agent. Only the main agent may apply high-confidence, behavior-preserving fixes.
 
